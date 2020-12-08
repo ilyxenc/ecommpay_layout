@@ -1,0 +1,165 @@
+/* стили для плеера начало */
+#facecast_channel {}
+
+#facecast_channel h1.channel_title {
+  color: #333
+}
+
+#empty_channel {
+  font-size: 14px;
+  color: #777;
+}
+
+#facecast_channel .event {
+  width: 666px;
+  height: 374px;
+  margin: 20px 0px;
+}
+
+.facecast-channel-page {
+  width: fit-content;
+}
+
+/* стили для плеера конец */
+.data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dataItem {
+  width: 50%;
+}
+
+.dataItem2 {
+  text-align: center;
+}
+
+.dataVideo {
+  width: 92.5%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.schedule {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.schedule p {
+  font-family: 'Bitter', serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 24px;
+}
+
+.scheduleCaption p {
+  font-weight: 400;
+}
+
+.scheduleLine img {
+  width: 19px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.schedule {
+  margin-left: 144px;
+}
+
+.chat {
+  width: 60%;
+  height: 430px;
+  background: #C4C4C4;
+  display: inline-block;
+  margin-top: 220px;
+  font-size: 30px;
+}
+
+.scheduleBottom {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1320px) {
+  .dataVideo {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-device-width: 1190px) {
+  .dataVideo {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-device-width: 868px) {
+  .dataVideo {
+    margin: auto;
+    width: 100%;
+  }
+
+  .dataItem {
+    width: auto;
+  }
+
+  .schedule {
+    margin-left: 28px;
+  }
+
+  .dataItem1 {
+    width: 57%;
+  }
+
+  .dataItem2 {
+    width: 43%;
+  }
+
+  .data {
+    margin: 52px 20px 0;
+  }
+
+  .chat {
+    width: calc(100% - 20px);
+    height: 56vh;
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .scheduleTop {
+    display: none;
+  }
+
+  .schedule {
+    margin-left: 14px;
+  }
+
+  .scheduleBottom {
+    display: flex;
+  }
+
+  .chat {
+    width: 100%;
+    margin: auto;
+    height: 340px;
+    margin-top: 20px;
+  }
+
+  .data {
+    margin: 30px 20px 0;
+    flex-direction: column;
+  }
+
+  .dataItem {
+    width: 100%;
+  }
+}
