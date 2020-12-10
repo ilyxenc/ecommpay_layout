@@ -1,0 +1,98 @@
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.popUpInside {
+  width: calc(100% - 60px);
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 120px 30px 41px;
+}
+
+.popUpBlock {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popUp {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 480px;
+  /* max-height: 650px; */
+  background: #080E24 url(./../../images/pop-up-background.png) no-repeat top right / auto 255px;
+  color: #FFFFFF;
+}
+
+.popUpCaption {
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.input {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  width: calc(100% - 40px);
+  width: 100%;
+  padding: 17px 20px;
+  display: block;
+  margin: 0 auto 20px;
+  background: #FFFFFF;
+  border: 1px solid #117BBC;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  color: #BABABA;
+}
+
+.button {
+  background: #117BBC;
+  border-radius: 4px;
+  width: 100%;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px auto 40px;
+}
+
+.popUpText {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.popUpMail {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  color: #117BBC;
+}

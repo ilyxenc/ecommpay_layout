@@ -1,0 +1,86 @@
+.data {
+  max-width: 894px;
+  margin: 126px auto 0;
+  padding: 0 20px;
+}
+
+.dataText {
+  font-family: 'Bitter', serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.hr {
+  display: block;
+  height: 8px;
+}
+
+.button {
+  margin: 60px auto 0;
+}
+
+.support {
+  font-family: 'Bitter', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px auto 5px;
+}
+
+.tg {
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #117BBC;
+}
+
+.pageName {
+  display: block;
+  font-size: 24px;
+  line-height: 53px;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background: #DB5F3C;
+  width: fit-content;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .data {
+    margin: 30px auto 0;
+  }
+
+  .dataText, .dataCaption, .tg, .support {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .data {
+    margin: 20px 10px 40px;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  .backLink {
+    margin-top: 10px;
+  }
+  .pageName{
+    margin-bottom: 20px;
+  }
+}

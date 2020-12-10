@@ -62,6 +62,7 @@ body {
   width: auto;
   background: #080E24 url(./../images/stars.png) repeat-x center center / cover;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .body {
@@ -75,6 +76,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 11;
 }
 
 .menuTopImg {
@@ -87,7 +89,7 @@ body {
 }
 
 .treeBottom {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -251,13 +253,57 @@ body {
   margin-top: 0px;
 }
 
-.menu2, .treeBottomTabletImg, .treeBottomMobileImg, .menuTopMobileImg, .menuTopMobileShadowImg, .menuBurger, .menu3, .logoMobile {
-  display: none;
-}
-
 .data {
   position: relative;
   z-index: 10;
+}
+
+.backImg {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center center;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40px;
+}
+
+.backText {
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-left: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.backLink {
+  margin-top: 10px;
+}
+
+.link {
+  width: fit-content;
+  display: block;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  width: 220px;
+  font-size: 20px;
+  line-height: 60px;
+  font-family: 'Bitter', serif;
+  font-weight: 900;
+  color: #FFFFFF;
+  background: #117BBC;
+  box-shadow: 0px 4px 0px #155983;
+  border-radius: 8px;
+}
+
+.menu2, .treeBottomTabletImg, .treeBottomMobileImg, .menuTopMobileImg, .menuTopMobileShadowImg, .menuBurger, .menu3, .logoMobile, .mobile {
+  display: none;
 }
 
 @media only screen and (max-device-width: 1440px) {}
@@ -319,6 +365,14 @@ body {
     display: block;
     position: absolute;
     bottom: 0;
+  }
+
+  .backLink {
+    margin-top: 40px;
+  }
+
+  .backImg {
+    margin-left: 20px;
   }
 }
 
@@ -459,5 +513,24 @@ body {
     padding: 20px 10px;
     display: block;
     position: relative;
+  }
+
+  .backLink {
+    display: none;
+    z-index: 11;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .backImg {
+    margin-left: 10px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .data {
+    z-index: 100;
   }
 }

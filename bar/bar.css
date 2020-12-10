@@ -1,0 +1,144 @@
+.data {
+  max-width: 894px;
+  margin: 136px auto 0;
+  padding: 0 20px;
+}
+
+.dataCaption {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.dataText {
+  font-family: 'Bitter', serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.hr {
+  display: block;
+  height: 8px;
+}
+
+.button {
+  margin: 60px auto 0;
+}
+
+.pageName {
+  display: block;
+  font-size: 24px;
+  line-height: 53px;
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background: #BA1919;
+  width: fit-content;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.schedule {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.scheduleP {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  text-align: left;
+  display: block;
+}
+
+.scheduleTime {
+  font-weight: 900 !important;
+  width: 95px;
+}
+
+.schedule img {
+  width: 19px;
+  height: auto;
+}
+
+.scheduleImg {
+  position: relative;
+  margin: 0 10px;
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.scheduleImg::after {
+  position: absolute;
+  content: '';
+  height: 43px;
+  width: 3px;
+  background: #304F62;
+  bottom: -43px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.scheduleImgLast::after {
+  content: none;
+}
+
+.scheduleText {
+  width: auto;
+}
+
+.scheduleItemLast .scheduleP {
+  margin: 0;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .data {
+    margin: 30px auto 0;
+  }
+
+  .scheduleP, .dataText, .dataCaption {
+    font-size: 14px;
+  }
+
+  .scheduleTime {
+    width: 85px;
+  }
+
+  .pageName {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .data {
+    margin: 20px 10px 40px;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  .backLink {
+    margin-top: 10px;
+  }
+}
