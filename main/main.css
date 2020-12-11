@@ -68,7 +68,6 @@
   line-height: 1.2;
   font-weight: 400;
   color: #FFFFFF;
-  margin-bottom: 24px;
   text-align: left;
   display: block;
 }
@@ -92,6 +91,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 24px;
 }
 
 .scheduleImg::after {
