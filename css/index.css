@@ -491,9 +491,9 @@ body {
   }
 
   .treeBottom {
-    position: relative;
+    /* position: relative;
     bottom: auto;
-    left: auto;
+    left: auto; */
   }
 
   .treeBottomMobileImg {
@@ -532,5 +532,9 @@ body {
 
   .data {
     z-index: 100;
+  }
+
+  .button {
+    width: 100%;
   }
 }

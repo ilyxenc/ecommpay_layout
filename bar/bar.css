@@ -123,8 +123,15 @@
     width: 85px;
   }
 
+  .dataCaptionTabletCenter {
+    text-align: center;
+  }
+
   .pageName {
-    display: none;
+    font-size: 20px;
+    line-height: 44px;
+    padding: 0 16px;
+    margin: 30px 0;
   }
 }
 
