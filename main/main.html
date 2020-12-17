@@ -17,6 +17,7 @@
 
   <link type="text/css" rel="stylesheet" href="./../css/index.css">
   <link type="text/css" rel="stylesheet" href="./main.css">
+  <link type="text/css" rel="stylesheet" href="./chat.css">
 
   <link rel="apple-touch-icon" sizes="57x57" href="./../images/icons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./../images/icons/apple-icon-60x60.png">
@@ -272,8 +273,158 @@
         </div>
       </div>
       <div class="dataItem dataItem2">
-        <div class="chat">
-          здесь будет чат
+        <div class="chatBlock">
+          <p class="chatCaption">
+            ЧАТ
+          </p>
+          <div class="chat">
+            <div class="messages">
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="message">
+                <p class="chatName">
+                  Александр Петров
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+              <div class="messageMine">
+                <p class="chatName">
+                  Я
+                </p>
+                <p class="chatText">
+                  Всем привет!
+                </p>
+              </div>
+            </div>
+            <form class="inputBlock">
+              <div id="emojis" data-visibility="0">
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+                <div class="emojisItem">
+                  <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+                </div>
+              </div>
+              <div id="emojiBlock">
+                <img class="emoji" src="./../images/chat/emoji.svg" alt="" />
+              </div>
+              <input class="chatInput" type="text" name="chatText" value="" placeholder="">
+              <div id="sendBlock">
+                <img class="send" src="./../images/chat/send.svg" alt="" />
+              </div>
+            </form>
+            <script type="text/javascript">
+              let emoji = document.querySelector('#emojiBlock');
+              let emojis = document.querySelector('#emojis');
+
+              emoji.addEventListener('click', () => {
+                if (emojis.dataset.visibility == 0) {
+                  emojis.classList = 'showEmojis';
+                  emojis.dataset.visibility = 1;
+                } else {
+                  emojis.classList = '';
+                  emojis.dataset.visibility = 0;
+                }
+              });
+            </script>
+          </div>
         </div>
         <div class="schedule scheduleBottom">
           <div class="scheduleItem">

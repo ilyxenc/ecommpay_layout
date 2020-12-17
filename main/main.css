@@ -119,15 +119,6 @@
   margin: 0;
 }
 
-.chat {
-  width: 60%;
-  height: 430px;
-  background: #C4C4C4;
-  display: inline-block;
-  margin-top: 220px;
-  font-size: 30px;
-}
-
 .scheduleBottom {
   display: none;
 }
@@ -169,13 +160,6 @@
   .data {
     margin: 52px 20px 0;
   }
-
-  .chat {
-    width: calc(100% - 20px);
-    height: 56vh;
-    margin: auto;
-    margin-left: 20px;
-  }
 }
 
 @media only screen and (max-device-width: 668px) {
@@ -190,13 +174,6 @@
 
   .scheduleBottom {
     display: flex;
-  }
-
-  .chat {
-    width: 100%;
-    margin: auto;
-    height: 340px;
-    margin-top: 20px;
   }
 
   .data {
