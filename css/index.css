@@ -159,16 +159,16 @@ body {
 }
 
 .menu1Item:hover .menu1ItemImg{
-  filter: drop-shadow(0px 0px 40px rgba(17, 123, 188, 0.4));
+  filter: drop-shadow(0px 0px 40px rgba(17, 123, 188, 1));
 }
 
-.menu1Item6:hover .menu1ItemImg {
+/* .menu1Item6:hover .menu1ItemImg {
   filter: drop-shadow(0px 0px 40px rgba(17, 123, 188, 0.8));
 }
 
 .menu1Item3:hover .menu1ItemImg {
   filter: drop-shadow(0px 0px 40px rgba(17, 123, 188, 0.2));
-}
+} */
 
 .menu1Item1Img {
   height: 183px;
